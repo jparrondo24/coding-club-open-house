@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-md-3"><img class="img-responsive" id="the-c" alt="The C" src="./images/the-c.png"/></div>
+        <div class="col-md-6">
+          <h1 id="header"></h1>
+          <h2>Future Explorer</h2>
+        </div>
+        <div class="col-md-3"><img class="img-responsive" id="mr-explorer" alt="Mr. Explorer" src="./images/stem.png"/></div>
+      </div>
+      <img class="img-responsive" id="center-picture" alt="Picture"/>
+      <h2>...and Coding/Cybersecurity Club Member!</h2>
+      <form onsubmit="sendMessage(event)">
+        <div class="form-group">
+          <input name="message" id="message" type="text" class="form-input" placeholder="Type a nice message for the Message Board!">
+          <button class="btn"><i class="fa fa-paper-plane"></i></button>
+        </div>
+      </form>
+    </div>
+  <script>
+    // CHANGE THE NAME IN QUOTATIONS TO YOUR NAME
+    let yourName = "Mr. Explorer";
+    // CHANGE THE ENDING OF THE LINK TO YOURS
+    let yourLink = "https://i.imgur.com/A5gTCXZ.jpg";
+
+    document.getElementById('header').innerHTML = yourName;
+    document.getElementById('center-picture').src = yourLink;
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

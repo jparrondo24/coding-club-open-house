@@ -1,0 +1,56 @@
+body {
+  background-color: #242424;
+}
+h1, h2, p, input {
+  font-family: 'Roboto Mono', monospace;
+}
+h1 {
+  font-size: 50px;
+  color: #3399ff;
+  text-align: center;
+  padding-top: 25px;
+}
+.row {
+  padding-top: 50px;
+}
+h2 {
+  padding-bottom: 20px;
+  font-size: 45px;
+  color: #ff4d4d;
+}
+#center-picture {
+  padding-bottom: 25px;
+  max-width: 600px;
+  max-height: 600px;
+}
+#the-c {
+  max-width: 200px;
+}
+#mr-explorer {
+  max-width: 200px;
+}
+.row {
+  margin: auto;
+}
+.form-input {
+  font-size: 20px;
+  width: 50%;
+  color: white !important;
+  background-color: inherit !important;
+  border: none !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 2px !important;
+  border-bottom-color: #4C4C4C !important;
+  border-radius: 0px;
+  transition-property: none !important;
+  transition-duration: 0s !important;
+  box-shadow: none !important;
+}
+
+button {
+  background-color: inherit !important;
+  border-color: #06cf10 !important;
+  color: #06cf10 !important;
+  box-shadow: none !important;
+  font-size: 20px !important;
+}
